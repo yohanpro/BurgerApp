@@ -19,11 +19,13 @@ const buildControls = (props)=>(
         added={()=>props.ingredientsAdd(ctrl.type)}
         remove={()=>props.ingredientsRemove(ctrl.type)}
         disable={props.disabled[ctrl.type]}
+ 
         />
         ))}
         <button 
         className={classes.OrderButton}
         disabled={!props.purchaseable}
+        onClick={props.ordered}
         >Order Now!</button>
     </div>
 );
