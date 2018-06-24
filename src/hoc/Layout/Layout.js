@@ -32,8 +32,7 @@ class Layout extends Component{
             <main className={classes.Content}>
                 {this.props.children}
             </main>
-        </Aux>
-
+        </Aux> 
         );
     }
     
